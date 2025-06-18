@@ -6,33 +6,7 @@
     <title>Mergington High School Activities</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /* Participants section styling */
-      .participants-section {
-        margin-top: 0.5em;
-        background: #f8f9fa;
-        border-radius: 6px;
-        padding: 0.5em 1em;
-        font-size: 0.97em;
-      }
-      .participants-section strong {
-        display: block;
-        margin-bottom: 0.3em;
-        color: #2d3a4a;
-      }
-      .participants-list {
-        margin: 0;
-        padding-left: 1.2em;
-        list-style-type: disc;
-      }
-      .participants-list li {
-        margin-bottom: 0.15em;
-        color: #3a3a3a;
-      }
-      .no-participants {
-        color: #888;
-        font-style: italic;
-        margin: 0;
-      }
+      /* Remove participants section styling */
       .activity-card {
         margin-bottom: 1.5em;
         padding: 1em;
@@ -59,6 +33,32 @@
       </section>
 
       <section id="signup-container">
+        <h3>Sign Up for an Activity</h3>
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="email">Student Email:</label>
+            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+          </div>
+          <div class="form-group">
+            <label for="activity">Select Activity:</label>
+            <select id="activity" required>
+              <option value="">-- Select an activity --</option>
+              <!-- Activity options will be loaded here -->
+            </select>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div id="message" class="hidden"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Mergington High School</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
         <h3>Sign Up for an Activity</h3>
         <form id="signup-form">
           <div class="form-group">
